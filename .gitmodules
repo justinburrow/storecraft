@@ -1,0 +1,3 @@
+[submodule "src/storecraft-blog"]
+	path = src/storecraft-blog
+	url = git@github.com:justinburrow/storecraft-blog.git
