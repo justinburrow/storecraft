@@ -1,5 +1,5 @@
 # github submodule repo address without https:// prefix
-SUBMODULE_GITHUB=github.com:justinburrow/storecraft-blog.git
+SUBMODULE_GITHUB=github.com/justinburrow/storecraft-blog.git
 
 # .gitmodules submodule path
 SUBMODULE_PATH=src/storecraft-blog
