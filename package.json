@@ -7,7 +7,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "vercel-install": "./vercel-submodule-install.sh && bun --ignore-scripts --production=false"
+    "vercel-install": "./vercel-submodule-install.sh && yarn --ignore-scripts --production=false"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.2.0",
