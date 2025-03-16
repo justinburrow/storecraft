@@ -1,0 +1,9 @@
+body, .font-mono {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 200;
+}
+
+h1, h2, h3, h4, h5, h6,
+.font-sans {
+  font-family: 'Inter Tight Variable', sans-serif;
+}
