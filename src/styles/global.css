@@ -30,6 +30,7 @@ body {
 	color: rgb(var(--gray-dark));
 	font-size: 20px;
 	line-height: 1.7;
+  max-width: 1600px;
 }
 main {
 	width: 720px;
@@ -140,4 +141,9 @@ hr {
 	clip-path: inset(50%);
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
+}
+
+/* Color Variables */
+:root {
+
 }
