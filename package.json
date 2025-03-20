@@ -1,25 +1,36 @@
 {
-  "name": "storecraft",
-  "version": "0.0.1",
-  "dependencies": {
-    "@astrojs/mdx": "^4.2.0",
-    "@astrojs/rss": "^4.0.11",
-    "@astrojs/sitemap": "^3.2.1",
-    "@fontsource-variable/inter-tight": "^5.2.5",
-    "@fontsource/ibm-plex-mono": "^5.2.5",
-    "astro": "^5.5.2",
-    "astro-breakpoints": "^0.6.2",
-    "postcss": "^8.5.3",
-    "postcss-preset-env": "^10.1.5",
-    "postcss-simple-vars": "^7.0.1",
-    "sass": "^1.85.1"
-  },
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "vercel-install": "./vercel-submodule-install.sh && yarn --ignore-scripts --production=false"
-  },
-  "type": "module"
+	"name": "storecraft",
+	"version": "0.0.1",
+	"dependencies": {
+		"@astrojs/mdx": "^4.2.0",
+		"@astrojs/rss": "^4.0.11",
+		"@astrojs/sitemap": "^3.2.1",
+		"@fontsource-variable/inter-tight": "^5.2.5",
+		"@fontsource/ibm-plex-mono": "^5.2.5",
+		"@typescript-eslint/parser": "^8.26.1",
+		"astro": "^5.5.2",
+		"astro-breakpoints": "^0.6.2",
+		"autoprefixer": "^10.4.21",
+		"cssnano": "^7.0.6",
+		"open-props": "^1.7.13",
+		"postcss": "^8.5.3",
+		"postcss-jit-props": "^1.0.16",
+		"postcss-nesting": "^13.0.1",
+		"postcss-preset-env": "^10.1.5",
+		"postcss-simple-vars": "^7.0.1",
+		"sass": "^1.85.1",
+		"vite-plugin-eslint": "^1.8.1"
+	},
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"vercel-install": "./vercel-submodule-install.sh && yarn --ignore-scripts --production=false",
+		"lint": "biome check --write ."
+	},
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4"
+	}
 }

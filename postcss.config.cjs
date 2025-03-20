@@ -1,10 +1,11 @@
-const postcssPresetEnv = require('postcss-preset-env');
-
+const openProps = require("open-props");
 
 module.exports = {
-  plugins: [
-    postcssPresetEnv({
-      features: {},
-    })
-  ],
+	plugins: [
+		require("postcss-nesting"),
+		require("autoprefixer"),
+		require("postcss-jit-props")(openProps),
+		require("cssnano"),
+		require("postcss-preset-env"),
+	],
 };

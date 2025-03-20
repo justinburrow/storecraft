@@ -3,22 +3,22 @@ const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} Your name here. All rights reserved.
+  &copy; {today.getFullYear()} Your name here. All rights reserved.
 </footer>
 
 <style lang="scss">
-  @use '../styles/media.css';
+  @use "../styles/media.css";
 
-	footer {
+  footer {
     padding-top: 16px;
     margin: 0;
-		color: rgb(var(--gray));
-		text-align: center;
+    color: rgb(var(--gray));
+    text-align: center;
     grid-column: span 6;
     border-top: 3px solid black;
 
     @media (--lg) {
       grid-column: span 12;
     }
-	}
+  }
 </style>

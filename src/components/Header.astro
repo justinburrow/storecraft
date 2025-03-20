@@ -1,15 +1,16 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
+import { SITE_TITLE } from "../consts";
+import HeaderLink from "./HeaderLink.astro";
 ---
 
 <header>
-	<div class="title-block">
+  <div class="title-block">
     <h1>
       <a href="#"><span class="light">STORE</span>CRAFT</a>
     </h1>
     <h2>
-      thoughtful online shop engineering + passive <a href="#">self promotion</a>
+      thoughtful online shop engineering + passive <a href="#">self promotion</a
+      >
     </h2>
   </div>
 
@@ -36,7 +37,7 @@ import { SITE_TITLE } from '../consts';
 </header>
 
 <style lang="scss">
-  @use '../styles/media.css';
+  @use "../styles/media.css";
 
   header {
     grid-column: span 6;
@@ -114,7 +115,8 @@ import { SITE_TITLE } from '../consts';
       }
     }
 
-    a, a:active {
+    a,
+    a:active {
       color: black;
       font-weight: 600;
     }
@@ -127,17 +129,17 @@ import { SITE_TITLE } from '../consts';
     grid-column-end: 7;
 
     @media (--lg) {
-        display: grid;
-        grid-column: span 6;
-        grid-column-end: 13;
-      }
+      display: grid;
+      grid-column: span 6;
+      grid-column-end: 13;
+    }
 
     li {
       grid-column: span 1;
       text-align: right;
       list-style-type: none;
       padding: 4px 16px 8px 16px;
-      font-family: 'Inter Tight Variable', sans-serif;
+      font-family: "Inter Tight Variable", sans-serif;
       position: relative;
       display: flex;
       overflow: hidden;
@@ -145,7 +147,9 @@ import { SITE_TITLE } from '../consts';
       &:hover a {
         .link-descript {
           opacity: 1;
-          transition: transform 0.3s ease-out 0.1s, opacity 0.3s ease 0.3s;
+          transition:
+            transform 0.3s ease-out 0.1s,
+            opacity 0.3s ease 0.3s;
           transform: translateX(0);
         }
       }
@@ -167,24 +171,25 @@ import { SITE_TITLE } from '../consts';
         text-decoration: none;
 
         &:before {
-          content: '';
+          content: "";
           width: 2px;
           height: 100%;
-          background: rgba(0,10,60,.05);
+          background: rgba(0, 10, 60, 0.05);
           position: absolute;
           top: 0;
           right: 0;
           z-index: -1;
           opacity: 0;
-          transform: translateX(95%)
-
+          transform: translateX(95%);
         }
 
         &:hover {
           z-index: 1;
           font-weight: 600;
           &:before {
-            transition: transform .6s ease-out, opacity 0.5s ease 0.1s;
+            transition:
+              transform 0.6s ease-out,
+              opacity 0.5s ease 0.1s;
             width: 100%;
             transform: translateX(0);
             opacity: 1;
@@ -193,7 +198,7 @@ import { SITE_TITLE } from '../consts';
 
         .link-descript {
           font-size: 12px;
-          font-family: 'IBM Plex Mono', monospace;
+          font-family: "IBM Plex Mono", monospace;
           font-weight: 300;
           display: block;
           text-decoration: none;
